@@ -8,9 +8,11 @@
 </p>
  
 ### **Here we have an illustration of login and review modal:** 
-<strong>1)</strong>=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=<strong>2)</strong>
 <p>
-  <img align="left" src="img1/login%20modal.png" width="400"> <img align="right" src="img1/review%20modal.png" width="400">
+  <img align="left" src="img1/login%20modal.png" width="400"> 
+</p>
+<p>
+ <img align="right" src="img1/review%20modal.png" width="400">
 </p>
 
 
