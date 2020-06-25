@@ -7,13 +7,10 @@
 <img src="img1/home.png" width="500" height="600"> 
 </p>
  
-### **Here we have an illustration of login and review modal:** 
-<p>
-  <img align="left" src="img1/login%20modal.png" width="400"> 
-</p>
-<p>
- <img align="right" src="img1/review%20modal.png" width="400">
-</p>
+### **Here we have an illustration of login ,review modal and a carousel:** 
+<img align="left" src="img1/login%20modal.png" width="400"> 
+<img align="right" src="img1/review%20modal.png" width="400">
+
 
 
 
