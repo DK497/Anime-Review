@@ -8,16 +8,16 @@
 </p>
  
 ### **Here we have an illustration of login ,review modal and a carousel:** 
+<div>
 <img align="left" src="img1/login%20modal.png" width="600"> 
 <img align="right" src="img1/review%20modal.png" width="600">
 <img align="left" src="img1/moving%20carousel.png" width="600"/> 
+</div>
 
-<br/>
-
-### **Finally we have about page**
 <p align="center">
 <img src="img1/about.png" width="400"/> 
 </p> 
+### **finally this is about page**
 
 
 
