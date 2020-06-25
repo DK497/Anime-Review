@@ -14,10 +14,12 @@
 <img align="left" src="img1/moving%20carousel.png" width="600"/> 
 </div>
 
+
+
 <p align="center">
 <img src="img1/about.png" width="400"/> 
-</p> 
-### **finally this is about page**
+</p>  
+<h3>Finally this is about page.</h3>
 
 
 
