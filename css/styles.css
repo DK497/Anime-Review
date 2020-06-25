@@ -1,0 +1,43 @@
+.jumbotron{
+    background-color: rgb(1, 48, 70);
+}
+.head{
+    font-size: 75px;
+    color: rgb(102, 160, 189);
+}
+#maill{
+    text-decoration: none;
+    color: grey;
+}
+.navbar{
+    background-color: rgb(17, 17, 49);
+    text-decoration-color: azure;
+}
+.footer{
+    background-color: rgb(17, 17, 49);
+    position: relative;
+}
+.row-content{
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+.carousel {
+    background:rgb(1, 110, 160);
+}
+
+.carousel-item {
+  height: 400px;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}

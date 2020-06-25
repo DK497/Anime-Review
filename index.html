@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <!-- endbuild -->
+     <title>Anime Review</title>
+     <link rel="icon" href="img/logo1.png" type="image/icon type">
+       </head>
+
+<body>
+  <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="img/logo1.png" height="50" width="70"></a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+                        </ul>
+                 <ul class="navbar-nav ml-5 ">
+                    <li class="list-inline-item "><a href="#" class=" nav-link text-light " data-toggle="modal" data-target="#registermodal" data-html="true" title="Register<br> <strong>Here</strong>" data-placement="bottom"><span class="fa fa-user-plus fa-lg d-inline"></span>Register</a></li>
+                 <li class="list-inline-item"><a   href="#" id="res" class=" nav-link text-light " data-toggle="modal" data-target="#"  data-html="true" title="Login<br> <strong>Here</strong>" data-placement="bottom"><span class="fa fa-sign-in fa-lg d-inline  "></span>Login</a></li>
+                               
+               </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="registermodal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+          
+            <div class="modal-content">
+               <div class="modal-header bg-primary text-white">
+                 <h4 class="modal-title  ">Register</h4>
+                 <button type="button" class="close text-white" data-dismiss="modal" >
+                    &times;
+                 </button>
+               </div>
+               <div class="modal-body bg-light">
+                      <form >
+                           <div class="form-group row">
+                               <label for="user" class="col-md-2 col-form-label">Username:</label>
+                                <div class="col-md-6">
+                                 <input type="text" class="form-control" id="user" name="date" placeholder="USERNAME">
+                                    
+                                </div>
+                        
+                            </div>
+                          <div class="form-group row">
+                                <label for="pass" class="col-md-2 col-form-label">Password:</label>
+                                <div class="col-md-6">
+                                 <input type="password" class="form-control" id="pass" name="date" placeholder="PASSWORD">
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="form-group row">
+                                <label for="passC" class="col-md-2 col-form-label">Confirm Password:</label>
+                                <div class="col-md-6">
+                                 <input type="password" class="form-control" id="passC" name="date" placeholder="CONFIRM PASSWORD">
+                                    
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="offset-2 col-md-5">
+                                    <button type="button" class="btn btn-secondary " data-dismiss="modal">Cancel
+                                    </button>
+                                    <button type="submit" class="btn btn-dark ">Register
+                                    </button>
+                                </div>
+                                
+                            </div>
+                             
+                        
+                        </form>
+               </div> 
+           </div>
+        </div>
+    
+    </div>
+    <div id="loginModal1" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+          
+            <div class="modal-content">
+               <div class="modal-header bg-info text-white">
+                 <h4 class="modal-title  ">LOGIN</h4>
+                 <button type="button" class="close text-white" data-dismiss="modal" >
+                    &times;
+                 </button>
+               </div>
+               <div class="modal-body bg-light">
+                    
+                           <div class="row mb-2">
+                              
+                                <div class="col-md-4">
+                                 <input type="text" class="form-control" id="user" name="date" placeholder="USERNAME">
+                                    
+                                </div>
+                        
+                                
+                                <div class="col-md-4">
+                                 <input type="password" class="form-control" id="pass" name="date" placeholder="PASSWORD">
+                                    
+                                </div>
+                               <div class="col-md-4">
+                                    <input type="checkbox" id="G6" name="Guest" class="custom-control-input">
+                                   <label class="custom-control-label" for="G6">Remember me</label>
+                               </div>
+                                
+                            </div>
+                            
+                            <div class="row">
+                                <div class="offset-9 col-md-5">
+                                    <button type="button" class="btn btn-secondary " data-dismiss="modal">Cancel
+                                    </button>
+                                    <button type="submit" class="btn btn-dark ">Sign-in
+                                    </button>
+                                </div>
+                                
+                            </div>                      
+               </div> 
+           </div>
+        </div>
+    
+    </div>
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+          
+            <div class="modal-content">
+               <div class="modal-header bg-info text-white">
+                 <h4 class="modal-title  ">Enter Review</h4>
+                 <button type="button" class="close text-white" data-dismiss="modal" >
+                    &times;
+                 </button>
+               </div>
+               <div class="modal-body bg-light">
+                      <form >
+                           <div class="form-group row">
+                               <label for="guests" class="col-md-2 col-form-label">Number of Stars</label>
+                                <div class="col-md-6">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="Guest1" name="Guest" class="custom-control-input">
+                               <label class="custom-control-label" for="Guest1">1</label>
+                                </div>
+                                    
+                                <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="Guest2" name="Guest" class="custom-control-input">
+                               <label class="custom-control-label" for="Guest2">2</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="Guest3" name="Guest" class="custom-control-input">
+                               <label class="custom-control-label" for="Guest3">3</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="Guest4" name="Guest" class="custom-control-input">
+                               <label class="custom-control-label" for="Guest4">4</label>
+                                </div>
+                               <div class="custom-control custom-radio custom-control-inline">
+                                  <input type="radio" id="Guest5" name="Guest" class="custom-control-input">
+                                  <label class="custom-control-label" for="Guest5">5</label>
+                                </div>
+                              <div class="custom-control custom-radio custom-control-inline">
+                                   <input type="radio" id="Guest6" name="Guest" class="custom-control-input">
+                                   <label class="custom-control-label" for="Guest6">6</label>
+                                </div>
+                                    
+                                </div>
+                        
+                            </div>
+                          <div class="form-group row">
+                                <label class="col-md-2 col-form-label" for="DandT" >Section</label>
+                                <div class="col-md-5 mr-0">
+                                    <div class="btn-group text-white" role="group">
+                                    <a type="radio" class="btn btn-info " id="DandT" name="radio" >Gintama
+                                    </a>
+                                    <a type="radio" class="btn btn-success" id="DandT" name="radio">Naruto
+                                    </a>
+                                    <a type="radio" class="btn btn-danger" id="DandT" name="radio">Dragonballz
+                                    </a>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-md-2 col-form-label" for="DandT" >Comment</label>
+                                <div class="col-md-6">
+                                    <textarea name="comment" class="form-control"  >Enter Review here...</textarea>
+                                </div>
+                                
+                            </div>
+                            <div class="form-group row">
+                                <div class="offset-2 col-md-5">
+                                    <button type="button" class="btn btn-secondary " data-dismiss="modal">Cancel
+                                    </button>
+                                    <button type="submit" class="btn btn-dark ">Submit
+                                    </button>
+                                </div>
+                                
+                            </div>
+                             
+                        
+                        </form>
+               </div> 
+           </div>
+        </div>
+    
+    </div>
+    
+    <header class ="jumbotron ">
+        <div class="container p-4">
+            <div class="row row-header align-items-center">
+                <div class="col-12 col-sm-6">
+                    <h1 class="head">𝕬𝖓𝖎𝖒𝖊 𝕽𝖊𝖛𝖎𝖊𝖜</h1>
+                    <p></p>
+                </div>
+                <div class="col-12 col-sm-6 align-self-center">
+                    <div class="row align-items-center">
+                        <div class="col-sm-4">
+                            <img src="img/logo.png" class="img-fluid">
+                        </div>
+                        <div class="col-sm-5 offset-md-2">
+                            <a href=""  role="button" id="reserve" class="btn btn-danger btn-block nav-link"
+                             data-toggle="modal" data-target="#" data-html="true" data-placement="bottom">
+                             <strong><i class="fa fa-star" aria-hidden="true"></i>
+                                Submit Review</strong></a>
+                               
+                       </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+    </header>
+   
+    <div class="container">
+        <div class="row">
+            <ul class="col-12 breadcrumb">
+                <li class="breadcrumb-item active">Home</li>
+                
+            </ul>
+            <div class="col-12">
+               <h3>Home</h3>
+               <hr>
+            </div>
+        </div>
+       <div class="row row-content">
+           <div class="col">
+               <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                   <div class="carousel-inner " role="listbox">
+                          <div class="carousel-item active ">
+                              <div class="col-md-9">
+                                <img class="d-block img-fluid" src="img/g.jpg" alt="gintama">
+                                <!-- <div class="carousel-caption d-none d-md-block" >
+                                   
+                                </div>  -->
+                              </div>
+                            <div class="col-md-3 float-right mr-4 mt-4 ">
+                                <h2 class="text-primary font-weight-bold text-center">Gintama
+                                    </h2><span class="badge badge-success">Samurai</span>
+                                    <span class="badge badge-pill badge-warning">Sci-Fi</span>
+                                    <span class="badge badge-success">Comedy</span>
+                                    <span class="badge badge-pill badge-warning">Shounen</span>
+                                        <p ><h5 class="text-white text-center">
+                                            First episode date:<br/> 4 April 2006<br/>
+                                            Written by	Akatsuki Yamatoya<br/>
+                                            Studio :Sunrise,Bandai Namco Pictures<br/>
+                                            Episodes:367 + 6 OVA
+                                        </h5></p>
+
+                            </div>
+                                
+                          </div>
+                          <div class="carousel-item ">
+                                 <div class="col-md-9">
+                                    <img class="d-block img-fluid" src="img/d.jpg" alt="Dragonballz">
+                                    <!-- <div class="carousel-caption d-none d-md-block">
+                                        </div> -->
+                                 </div>
+                                 <div class="col-md-3 float-right mr-4 mt-4">
+                                    <h2 class="text-dark font-weight-bold text-center">Dragonball Z</h2>
+                                    <span class="badge badge-success">Martial-Arts</span>
+                                       <span class="badge badge-pill badge-warning">Adventure</span>
+                                       <span class="badge badge-success">Comedy</span>
+                                       <span class="badge badge-pill badge-warning">Shounen</span>
+                                       <p ><h5 class="text-white text-center">
+                                        First episode date: <br/>26 April 1989<br/>
+                                        Written by	Takao Koyama<br/>
+                                        Studio :	Toei Animation<br/>
+                                        Episodes:291
+                                    </h5></p>
+
+                                 </div>
+                          </div>
+                          <div class="carousel-item ">
+                                  <div class="col-md-9">
+                                    <img class="d-block img-fluid" src="img/n.jpg" alt="Naruto">
+                                    <!-- <div class="carousel-caption d-none d-md-block">
+                                       </div> -->
+                                  </div>
+                                  <div class="col-md-3 float-right mr-4 mt-4">
+                                    <h2 class="text-warning font-weight-bold text-center">Naruto</h2>
+                                    <span class="badge badge-success">Martial-Arts</span>
+                                    <span class="badge badge-pill badge-warning">Super Power</span>
+                                    <span class="badge badge-success">Comedy</span>
+                                    <span class="badge badge-pill badge-warning">Shounen</span>  
+                                    <p ><h5 class="text-white text-center">
+                                        First episode date: <br/>3 October 2002<br/>
+                                        Written by	Katsuyuki Sumisawa,Junki Takegami<br/>
+                                        Studio :		Pierrot<br/>
+                                        Episodes:220
+                                    </h5></p>
+                                  </div>
+                                  
+                          </div>
+                    </div>
+                   <ol class="carousel-indicators">
+                       <li data-target="#mycarousel" data-slide-to="0" class="active">
+                       </li>
+                       <li data-target="#mycarousel" data-slide-to="1" >
+                       </li>
+                       <li data-target="#mycarousel" data-slide-to="2" >
+                       </li>
+                   </ol>
+                   <a class="carousel-control-prev" href=#mycarousel role="button" data-slide="prev">
+                       <span class="carousel-control-prev-icon"></span>
+                   </a>
+                   <a class="carousel-control-next" href=#mycarousel role="button" data-slide="next">
+                       <span class="carousel-control-next-icon"></span>
+                   </a>
+                   
+                </div>
+                       
+            </div>
+        </div>
+       
+        <div class="row row-content align-items-center mt-6">
+            <div class="col-12 col-sm-4 col-md-3 order-sm-last ">
+                <h3 class="text-center text-primary">Best Comedy Anime Ever!</h3>
+            </div>
+            <div class="col col-sm col-md order-sm-first">
+                <div class="media">
+                   <img src="img/g.jpg" style="width:350px;height:300px;" class="d-flex mr-3 img-thumbnail align-self-center" alt="uthapizza">
+                    <div class="media-body"> 
+                    <h2 class="media-heading ">Gintama<span class="badge badge-danger ml-3">COMEDY</span>
+                    </h2>
+                   <p>The Amanto, aliens from outer space, have invaded Earth and taken over feudal Japan. As a result, a prohibition on swords has been established, and the samurai of Japan are treated with disregard as a consequence.However one man, Gintoki Sakata, still possesses the heart of the samurai, although from his love of sweets and work as a yorozuya, one might not expect it. Accompanying him in his jack-of-all-trades line of work are Shinpachi Shimura, a boy with glasses and a strong heart, Kagura with her umbrella and seemingly bottomless stomach, as well as Sadaharu, their oversized pet dog. Of course, these odd jobs are not always simple, as they frequently have run-ins with the police, ragtag rebels, and assassins, oftentimes leading to humorous but unfortunate consequences.</p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 col-md-3">
+                <h3 class="text-secondary text-center">Best Action Anime Ever!</h3>
+            </div>
+            <div class="col col-sm col-md">
+                <div class="media">
+                    <img src="img/d.jpg" style="width:350px;height:300px;" class="d-flex mr-3 img-thumbnail align-self-center order-sm-last" alt="Buffet">
+                    <div class="media-body">
+                        <h2>Dragonball Z<span class="badge badge-danger ml-3">Martial-Arts</span></h2>
+                        <p>Five years after winning the World Martial Arts tournament, Gokuu is now living a peaceful life with his wife and son. This changes, however, with the arrival of a mysterious enemy named Raditz who presents himself as Gokuu's long-lost brother. He reveals that Gokuu is a warrior from the once powerful but now virtually extinct Saiyan race, whose homeworld was completely annihilated. When he was sent to Earth as a baby, Gokuu's sole purpose was to conquer and destroy the planet; but after suffering amnesia from a head injury, his violent and savage nature changed, and instead was raised as a kind and well-mannered boy, now fighting to protect others.With his failed attempt at forcibly recruiting Gokuu as an ally, Raditz warns Gokuu's friends of a new threat that's rapidly approaching Earth—one that could plunge Earth into an intergalactic conflict and cause the heavens themselves to shake. A war will be fought over the seven mystical dragon balls, and only the strongest will survive in Dragon Ball Z.</p>
+                   </div>
+                </div>
+               
+            </div>
+        </div>
+
+        <div class="row row-content  align-items-center">
+            <div class="col-12 col-sm-4 col-md-3 order-sm-last">
+                <h3 class="text-warning text-center">Best Storyline Anime Ever</h3>
+            </div>
+            <div class="col col-sm col-md order-sm-first">
+                <div class="media">
+                    <img src="img/n.jpg" style="width:350px;height:300px;" class="d-flex mr-3 img-thumbnail align-self-center " alt="Alberto">
+                    <div class="media-body">
+                        <h2>Naruto<span class="badge badge-danger ml-3">Action</span></h2>
+                   
+                          <p>Moments prior to Naruto Uzumaki's birth, a huge demon known as the Kyuubi, the Nine-Tailed Fox, attacked Konohagakure, the Hidden Leaf Village, and wreaked havoc. In order to put an end to the Kyuubi's rampage, the leader of the village, the Fourth Hokage, sacrificed his life and sealed the monstrous beast inside the newborn Naruto.Now, Naruto is a hyperactive and knuckle-headed ninja still living in Konohagakure. Shunned because of the Kyuubi inside him, Naruto struggles to find his place in the village, while his burning desire to become the Hokage of Konohagakure leads him not only to some great new friends, but also some deadly foes.</p>
+                   </div>
+                </div>
+                
+                
+            </div>
+        </div>
+         
+    </div>
+
+    <footer class="footer p-4"  >
+        <div class="container text-white">
+            <div class="row">             
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5 class="ml-3">Links</h5>
+                    <ul class="list-unstyled ">
+                        <li class="m-2"><a class="btn bg-secondary text-light " href="index.html">Home</a></li>
+                        <li class="m-2"><a class="btn bg-secondary text-light" href="aboutus.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+		              ABV-IIITM<br>
+		              BH-1<br>
+		              Gwalior<br>
+		              Tel:#$#$#$#$#$#$<br>
+		              Fax:$#$#$#$#$#$#<br>
+		              Email: <a id="maill" href=" mailto:imt_2017033@iiitm.ac.in">imt_2017033@iiitm.ac.in</a>
+		           </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a class="btn bg-danger text-light" href="http://google.com/+"><span class="fa fa-google fa-lg" style="font-size:30px"></span></a>
+                        <a class="btn bg-info text-light" href="http://www.facebook.com/profile.php?id="><span class="fa fa-facebook fa-lg" style="font-size:30px"></span></a>
+                        <a class="btn bg-primary text-light" href="http://www.linkedin.com/in/"><span class="fa fa-linkedin fa-lg" style="font-size:30px"></span></a>
+                        <a class="btn bg-info text-light"  href="http://twitter.com/"><span class="fa fa-twitter fa-lg" style="font-size:30px"></span></a>
+                        <a class="btn bg-danger text-light" href="http://youtube.com/"><span class="fa fa-youtube fa-lg" style="font-size:30px"></span></a>
+                        <a class="btn bg-success text-light" href="mailto:"><span class="fa fa-envelope fa-lg" style="font-size:30px"></span></a>
+                        
+                    </div>
+                </div>
+           </div>
+           <div class="row justify-content-center">             
+                <div class="col-auto">
+                    <p>© Copyright 2018 Anime Review</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    
+   
+    <script>
+    
+        
+$(document).ready(function(){
+  $("#reserve").click(function(){
+   $("#reserve").attr("data-target","#loginModal"); 
+  });
+    $("#res").click(function(){
+   $("#res").attr("data-target","#loginModal1"); 
+  });
+  
+  
+});
+ 
+    
+    </script>
+    <!-- endbuild -->
+
+</body>
+
+</html>
