@@ -12,8 +12,9 @@
 <img align="right" src="img1/review%20modal.png" width="600">
 <img align="left" src="img1/moving%20carousel.png" width="600"/> 
 
-### **Finally we have about page**
+<br/>
 
+### **Finally we have about page**
 <p align="center">
 <img src="img1/about.png" width="400"/> 
 </p> 
